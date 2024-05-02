@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { Video } from './components/Video'
+import { Appbar } from './components/Appbar'
 import './App.css'
 import { VideoGrid } from './components/VideoGrid'
 
@@ -9,11 +10,9 @@ function App() {
 
   return (
     <>
-      <div className='bg-red-500'>
-           hi there
 
-      </div>
       <div>
+        <Appbar />
         <VideoGrid />
       </div>
     </>
