@@ -1,26 +1,26 @@
 import React from 'react';
 
-export const Video = () => {
+export function Video({ title, author, views, timestamp }) {
   return (
     <div>
-        <img src='src\assets\image.png'/>
+        <img src='src\assets\image.png' alt="Video Thumbnail" />
         <div className='grid grid-cols-12'>
-            <img src='src\assets\thumb.png' className='rounded-full w-20 h-20 mr-4' />
+            <img src='src\assets\thumb.png' alt="Author Thumbnail" className='rounded-full w-18 h-18 mr-4' />
             <div className='col-span-10'>
-                Rust Tutorial for Beginners - <br></br>
-                Full Course (With Notes and Project Ideas)
+                <h3>{title}</h3>
                 
                 <div className='col-span-12 pl-0 text-gray-100 text-base'>
-                    Harkirat Singh
+                    {author}
                 </div>
                 
                 <div className='col-span-12 pl-0 text-gray-100 text-base'>
-                    21k views . 1 day ago
+                    {views} | {timestamp}
                 </div>
             </div> 
         </div>
     </div>
-  )
+  );
 }
+
 
 

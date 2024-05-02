@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { Video } from './components/Video'
 import './App.css'
+import { VideoGrid } from './components/VideoGrid'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function App() {
 
       </div>
       <div>
-        <Video />
+        <VideoGrid />
       </div>
     </>
   )
